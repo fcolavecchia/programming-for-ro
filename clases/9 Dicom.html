@@ -1,0 +1,1226 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Maestría en Física Médica - Taller de Informática &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'clases/9 Dicom';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">My sample book</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0%20Introducci%C3%B3n%20a%20Jupyter%20Notebooks.html">Clase 0</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/fcolavecchia/es/taller-de-informatica" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/fcolavecchia/es/taller-de-informatica/issues/new?title=Issue%20on%20page%20%2Fclases/9 Dicom.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/clases/9 Dicom.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Maestría en Física Médica - Taller de Informática</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Maestría en Física Médica - Taller de Informática</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#imagenes-medicas-dicom">Imágenes médicas - DICOM</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-standard-dicom">El standard DICOM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalando-pydicom">Instalando <code class="docutils literal notranslate"><span class="pre">pydicom</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usando-pydicom">Usando <code class="docutils literal notranslate"><span class="pre">pydicom</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#abrir-un-archivo-dicom">Abrir un archivo DICOM</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#para-acceder-a-campos-privados-debo-hacerlo-por-el-tag"><em>Para acceder a CAMPOS PRIVADOS debo hacerlo por el TAG</em></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#las-imagenes-dicom">Las imágenes DICOM</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ajustando-la-imagen">Ajustando la imagen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#obteniendo-hus">Obteniendo HUs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#window-and-level">Window and Level</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manipulando-la-imagen">Manipulando la imagen</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ventanas-de-visualizacion-tipicas-en-ct">Ventanas de visualización típicas en CT</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="maestria-en-fisica-medica-taller-de-informatica">
+<h1>Maestría en Física Médica - Taller de Informática<a class="headerlink" href="#maestria-en-fisica-medica-taller-de-informatica" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="imagenes-medicas-dicom">
+<h1>Imágenes médicas - DICOM<a class="headerlink" href="#imagenes-medicas-dicom" title="Link to this heading">#</a></h1>
+<section id="el-standard-dicom">
+<h2>El standard DICOM<a class="headerlink" href="#el-standard-dicom" title="Link to this heading">#</a></h2>
+<p>Para facilitar la intercomunicación entre distintas modalidades de diagnóstico por imágenes, se creó en 1993 el formato <strong>DICOM</strong> (<em>Digital Imaging and Communications in Medicine</em>).
+Este es un standard que define cómo guardar la información de una imagen, series de imágenes e incluso videos (<em>cines</em>), junto con datos relevantes de la misma, datos del paciente, del centro médico, de la modalidad específica de diagnóstico, etc.</p>
+<p>La definición del standard es extensísima (pueden consultarla en <a class="reference external" href="https://www.dicomstandard.org/current">https://www.dicomstandard.org/current</a>), dado que incluye un enorme abanico de posibles tipos de datos.</p>
+<p>Esencialmente, un archivo DICOM está estructurado en una lista de <em>TAGS</em> que se componen de la siguiente manera:</p>
+<ul>
+<li><p>Dos números hexadecimales (denominados <strong>Grupo</strong> y <strong>Elemento</strong>) que identifican el atributo de la imagen. Cada atributo tiene un nombre asociado, que es el que se utiliza generalmente para acceder al mismo. Por ejemplo</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  (0008, 0060) Modality 
+</pre></div>
+</div>
+</li>
+</ul>
+<p>corresponde al grupo 0008, elemento 0006 que describe el atributo Modalidad de la imagen.</p>
+<ul class="simple">
+<li><p>Dos letras (<strong>Value Representation</strong>) que indican el tipo de dato que se está guardando en el tag, por ejemplo</p>
+<ul>
+<li><p>‘SH’ para <em>short strings</em> (hasta 16 caracteres)</p></li>
+<li><p>‘US’ para <em>enteros sin signo</em> (enteros mayores o iguales que cero, usando 2 bytes)</p></li>
+<li><p>‘SQ’ para secuencias de otros tags</p></li>
+<li><p><a class="reference external" href="http://dicom.nema.org/dicom/2013/output/chtml/part05/sect_6.2.html">y otros más</a></p></li>
+</ul>
+</li>
+<li><p>El valor específico del atributo en sí.</p></li>
+</ul>
+<p>Entonces, un tag completo sería</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(0008, 0080) Institution Name                    LO: &#39;INTECNUS&#39;
+</pre></div>
+</div>
+<blockquote>
+<div><p>Recomendamos usar la página <a class="reference external" href="https://dicom.innolitics.com/ciods">https://dicom.innolitics.com/ciods</a> para explorar los tag DICOM, dado que la página del standard es compleja para buscar información</p>
+</div></blockquote>
+<p>Afortunadamente, la gran mayoría de los lenguajes provee de bibliotecas para trabajar con archivos DICOM. Python no es una excepción, y usa el módulo <code class="docutils literal notranslate"><span class="pre">pydicom</span></code>.</p>
+</section>
+<section id="instalando-pydicom">
+<h2>Instalando <code class="docutils literal notranslate"><span class="pre">pydicom</span></code><a class="headerlink" href="#instalando-pydicom" title="Link to this heading">#</a></h2>
+<p>Desafortunadamente, <code class="docutils literal notranslate"><span class="pre">pydicom</span></code> no viene instalado por defecto en Anaconda. Veamos cómo instalarlo.</p>
+<ol class="arabic">
+<li><p>Correr la línea de comando de miniconda.</p></li>
+<li><p>En la línea de comando,</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> conda install -c conda-forge pydicom
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="usando-pydicom">
+<h2>Usando <code class="docutils literal notranslate"><span class="pre">pydicom</span></code><a class="headerlink" href="#usando-pydicom" title="Link to this heading">#</a></h2>
+<p>Una vez instalado <code class="docutils literal notranslate"><span class="pre">pydicom</span></code>, es posible usarlo como un módulo cualquiera. La documentación está acá: <a class="reference external" href="https://pydicom.github.io/pydicom/stable/index.html">https://pydicom.github.io/pydicom/stable/index.html</a></p>
+<blockquote>
+<div><p>Es importante mencionar que, además de poder acceder a todos los tags DICOM de un archivo, <code class="docutils literal notranslate"><span class="pre">pydicom</span></code> además guarda información del archivo en sus propias variables, para facilitar el acceso a las mismas.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pydicom</span>
+
+<span class="c1">#</span>
+<span class="c1">#    pydicom provee algunos datos de ejemplo, que se pueden importar así:</span>
+<span class="c1">#</span>
+<span class="c1"># from pydicom.data import get_testdata_files</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pydicom</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1">#</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="c1">#    pydicom provee algunos datos de ejemplo, que se pueden importar así:</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="c1">#</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="c1"># from pydicom.data import get_testdata_files</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pydicom&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<section id="abrir-un-archivo-dicom">
+<h3>Abrir un archivo DICOM<a class="headerlink" href="#abrir-un-archivo-dicom" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">DCM</span> <span class="o">=</span> <span class="n">pydicom</span><span class="o">.</span><span class="n">dcmread</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;../Assets/CT/IM-0001-0200-0001.dcm&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">DCM</span> <span class="o">=</span> <span class="n">pydicom</span><span class="o">.</span><span class="n">dcmread</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;../Assets/CT/IM-0001-0200-0001.dcm&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;pydicom&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">DCM</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">type</span><span class="p">(</span><span class="n">DCM</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;DCM&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">DCM</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">DCM</span>
+
+<span class="ne">NameError</span>: name &#39;DCM&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>Para acceder a cada uno de los atributos del archivo DICOM se utiliza el nombre del atributo</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">DCM</span><span class="o">.</span><span class="n">PatientName</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">DCM</span><span class="o">.</span><span class="n">PatientName</span>
+
+<span class="ne">NameError</span>: name &#39;DCM&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">DCM</span><span class="o">.</span><span class="n">StudyDescription</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">DCM</span><span class="o">.</span><span class="n">StudyDescription</span>
+
+<span class="ne">NameError</span>: name &#39;DCM&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">DCM</span><span class="o">.</span><span class="n">ProtocolName</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">DCM</span><span class="o">.</span><span class="n">ProtocolName</span>
+
+<span class="ne">NameError</span>: name &#39;DCM&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>Pero también tengo la información desde el tag, usando el grupo y elemento en representación hexadecimal:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tag  : &quot;</span><span class="p">,</span><span class="n">DCM</span><span class="p">[</span><span class="mh">0x0018</span><span class="p">,</span><span class="mh">0x1030</span><span class="p">]</span><span class="o">.</span><span class="n">tag</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;VR   : &quot;</span><span class="p">,</span><span class="n">DCM</span><span class="p">[</span><span class="mh">0x0018</span><span class="p">,</span><span class="mh">0x1030</span><span class="p">]</span><span class="o">.</span><span class="n">VR</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;valor: &quot;</span><span class="p">,</span><span class="n">DCM</span><span class="p">[</span><span class="mh">0x0018</span><span class="p">,</span><span class="mh">0x1030</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tag  : &quot;</span><span class="p">,</span><span class="n">DCM</span><span class="p">[</span><span class="mh">0x0018</span><span class="p">,</span><span class="mh">0x1030</span><span class="p">]</span><span class="o">.</span><span class="n">tag</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;VR   : &quot;</span><span class="p">,</span><span class="n">DCM</span><span class="p">[</span><span class="mh">0x0018</span><span class="p">,</span><span class="mh">0x1030</span><span class="p">]</span><span class="o">.</span><span class="n">VR</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;valor: &quot;</span><span class="p">,</span><span class="n">DCM</span><span class="p">[</span><span class="mh">0x0018</span><span class="p">,</span><span class="mh">0x1030</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;DCM&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<section id="para-acceder-a-campos-privados-debo-hacerlo-por-el-tag">
+<h4><em>Para acceder a CAMPOS PRIVADOS debo hacerlo por el TAG</em><a class="headerlink" href="#para-acceder-a-campos-privados-debo-hacerlo-por-el-tag" title="Link to this heading">#</a></h4>
+<p>Un campo privado se encuentran definidos por el fabricante y no estan en el diccionario del estándar. Sin embargo, se encuentran perfectamente detallados en los respectivos <strong>dicom conformance statement</strong> de cada equipo.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">DCM</span><span class="p">[</span><span class="mh">0x0009</span><span class="p">,</span> <span class="mh">0x1004</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">DCM</span><span class="p">[</span><span class="mh">0x0009</span><span class="p">,</span> <span class="mh">0x1004</span><span class="p">]</span>
+
+<span class="ne">NameError</span>: name &#39;DCM&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="p">[</span><span class="mh">0x0009</span><span class="p">,</span> <span class="mh">0x1004</span><span class="p">]</span><span class="o">.</span><span class="n">tag</span><span class="p">,</span>
+      <span class="n">DCM</span><span class="p">[</span><span class="mh">0x0009</span><span class="p">,</span> <span class="mh">0x1004</span><span class="p">]</span><span class="o">.</span><span class="n">VR</span><span class="p">,</span>
+      <span class="n">DCM</span><span class="p">[</span><span class="mh">0x0009</span><span class="p">,</span> <span class="mh">0x1004</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="p">[</span><span class="mh">0x0009</span><span class="p">,</span> <span class="mh">0x1004</span><span class="p">]</span><span class="o">.</span><span class="n">tag</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span>       <span class="n">DCM</span><span class="p">[</span><span class="mh">0x0009</span><span class="p">,</span> <span class="mh">0x1004</span><span class="p">]</span><span class="o">.</span><span class="n">VR</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span>       <span class="n">DCM</span><span class="p">[</span><span class="mh">0x0009</span><span class="p">,</span> <span class="mh">0x1004</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;DCM&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="las-imagenes-dicom">
+<h3>Las imágenes DICOM<a class="headerlink" href="#las-imagenes-dicom" title="Link to this heading">#</a></h3>
+<p>Las imágenes propiamente dichas se encuentran guardadas como un array en el atributo <strong>PIXEL DATA</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="p">[</span><span class="mh">0x7fe0</span><span class="p">,</span> <span class="mh">0x0010</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">PixelData</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">PixelData</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">11</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="p">[</span><span class="mh">0x7fe0</span><span class="p">,</span> <span class="mh">0x0010</span><span class="p">])</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">PixelData</span><span class="p">))</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">PixelData</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">11</span><span class="p">])</span>
+
+<span class="ne">NameError</span>: name &#39;DCM&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>Sin embargo, este atributo tiene como <em>Value Representation</em> a ‘OW’, (<em>Other Word String</em>) que no parece ser muy amigable…</p>
+<p>Por eso, <code class="docutils literal notranslate"><span class="pre">pydicom</span></code> guarda la imagen en la variable <code class="docutils literal notranslate"><span class="pre">pixel_array</span></code>, que es un array de <code class="docutils literal notranslate"><span class="pre">numpy</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">pixel_array</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tamaño de la imagen:&quot;</span><span class="p">,</span><span class="n">DCM</span><span class="o">.</span><span class="n">pixel_array</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">12</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">pixel_array</span><span class="p">))</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tamaño de la imagen:&quot;</span><span class="p">,</span><span class="n">DCM</span><span class="o">.</span><span class="n">pixel_array</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;DCM&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig_1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">])</span>
+<span class="n">img1</span> <span class="o">=</span> <span class="n">fig_1</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">img1</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">pixel_array</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+<span class="n">img1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;CORTE AXIAL CT, sin procesar&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">13</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">fig_1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">])</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">img1</span> <span class="o">=</span> <span class="n">fig_1</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">img1</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">pixel_array</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">img1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;CORTE AXIAL CT, sin procesar&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="ne">NameError</span>: name &#39;DCM&#39; is not defined
+</pre></div>
+</div>
+<img alt="../_images/1f7bbf9fbce020df121f374964afa0566cda4611481f53050d2d3196b83acad7.png" src="../_images/1f7bbf9fbce020df121f374964afa0566cda4611481f53050d2d3196b83acad7.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">pixel_array</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">14</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">pixel_array</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;DCM&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="ajustando-la-imagen">
+<h2>Ajustando la imagen<a class="headerlink" href="#ajustando-la-imagen" title="Link to this heading">#</a></h2>
+<section id="obteniendo-hus">
+<h3>Obteniendo HUs<a class="headerlink" href="#obteniendo-hus" title="Link to this heading">#</a></h3>
+<p>Cada pixel de una imagen de CT corresponde a un determinado valor de unidades de Hounsfield. Sin embargo, los valores que se guardan en los archivos no corresponden directamente a los valores de HU, sino a una versión rescaleada (esto se debe básicamente a las limitaciones que impone el formato DICOM al tipo de dato a usar). Por eso, para obtener HU, es necesario aplicar la siguiente transformación lineal:</p>
+<div class="math notranslate nohighlight">
+\[
+f_t(x,y) = \texttt{DCM.RescaleSlope} \times f_{orig}(x,y)  + \texttt{DCM.RescaleIntercept}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">RescaleType</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">RescaleSlope</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">RescaleIntercept</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">15</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">RescaleType</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">RescaleSlope</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">RescaleIntercept</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;DCM&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imagen</span> <span class="o">=</span> <span class="n">DCM</span><span class="o">.</span><span class="n">pixel_array</span> <span class="o">*</span> <span class="n">DCM</span><span class="o">.</span><span class="n">RescaleSlope</span> <span class="o">+</span> <span class="n">DCM</span><span class="o">.</span><span class="n">RescaleIntercept</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">imagen</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">16</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">imagen</span> <span class="o">=</span> <span class="n">DCM</span><span class="o">.</span><span class="n">pixel_array</span> <span class="o">*</span> <span class="n">DCM</span><span class="o">.</span><span class="n">RescaleSlope</span> <span class="o">+</span> <span class="n">DCM</span><span class="o">.</span><span class="n">RescaleIntercept</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="n">imagen</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;DCM&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">imagen</span><span class="p">[</span><span class="mi">50</span><span class="p">,</span><span class="mi">256</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">imagen</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">imagen</span><span class="p">))</span>
+<span class="n">imagen2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">imagen</span><span class="p">,</span> <span class="o">-</span><span class="mi">1000</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">imagen</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">imagen2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">17</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="n">imagen</span><span class="p">[</span><span class="mi">50</span><span class="p">,</span><span class="mi">256</span><span class="p">])</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">imagen</span><span class="p">))</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">imagen</span><span class="p">))</span>
+
+<span class="ne">NameError</span>: name &#39;imagen&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig_1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">])</span>
+<span class="n">img1</span> <span class="o">=</span> <span class="n">fig_1</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">img1</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">imagen2</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+<span class="n">img1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;CORTE AXIAL CT, HUs&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">18</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">fig_1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">])</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">img1</span> <span class="o">=</span> <span class="n">fig_1</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">img1</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">imagen2</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">img1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;CORTE AXIAL CT, HUs&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="ne">NameError</span>: name &#39;imagen2&#39; is not defined
+</pre></div>
+</div>
+<img alt="../_images/1f7bbf9fbce020df121f374964afa0566cda4611481f53050d2d3196b83acad7.png" src="../_images/1f7bbf9fbce020df121f374964afa0566cda4611481f53050d2d3196b83acad7.png" />
+</div>
+</div>
+</section>
+<section id="window-and-level">
+<h3>Window and Level<a class="headerlink" href="#window-and-level" title="Link to this heading">#</a></h3>
+<p>El proceso de <em>Windowing</em> ( o <em>grey-level mapping, contrast stretching, histogram modification, contrast enhancement, LUT</em>, etc.) consiste en manipular las componentes de la imagen de forma tal que se puedan realzar ciertas estructuras particulares. El brillo de la imagen se ajusta a partir del <em>Window Level</em>, mientras que el contraste se ajusta a partir del <em>Window Width</em>.</p>
+<p><img alt="Window%20and%20level.png" src="clases/attachment:Window%20and%20level.png" /></p>
+<p>Cada DICOM puede proveer un ancho y centro de ventana que viene desde el equipo de adquisición de imágenes:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">WindowCenter</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">WindowWidth</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">19</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">WindowCenter</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="n">DCM</span><span class="o">.</span><span class="n">WindowWidth</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;DCM&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<blockquote>
+<div><p>Recordemos que el valor de los pixeles en el monitor van de 0 a 255</p>
+</div></blockquote>
+<p>Típicamente si definimos</p>
+<p>\begin{align}
+c &amp;= \texttt{DCM.WindowCenter} \
+w &amp;= \texttt{DCM.WindowWidth}
+\end{align}</p>
+<p>Entonces, la imagen transformada se obtiene como:</p>
+<p>\begin{align}
+f_t(x,y) &amp;= 0 &amp;\textrm{si} \qquad f(x,y) &lt; c - w /2 \
+f_t(x,y) &amp;= 255  &amp;\textrm{si} \qquad f(x,y) &gt; c + w /2 \
+f_t(x,y) &amp;= (f(x,y) - c)  \times 255/w   &amp;\textrm{en otro caso}
+\end{align}</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;El centro de ventana es: &#39;</span><span class="p">,</span> <span class="n">DCM</span><span class="o">.</span><span class="n">WindowCenter</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">El ancho de ventana es: &#39;</span><span class="p">,</span> <span class="n">DCM</span><span class="o">.</span><span class="n">WindowWidth</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">20</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;El centro de ventana es: &#39;</span><span class="p">,</span> <span class="n">DCM</span><span class="o">.</span><span class="n">WindowCenter</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">El ancho de ventana es: &#39;</span><span class="p">,</span> <span class="n">DCM</span><span class="o">.</span><span class="n">WindowWidth</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;DCM&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>Veamos si podemos hacer esto sin tener que generar otra imagen transformada. Para eso, veamos los parámetros opcionales de <code class="docutils literal notranslate"><span class="pre">plt.imshow</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>plt.imshow<span class="o">?</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Es decir que si pasamos el máximo y el mínimo de la ventana, ya obtendríamos el resultado esperado:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="mi">40</span>
+<span class="n">w</span> <span class="o">=</span> <span class="mi">400</span>
+<span class="n">ventmax</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="n">w</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">ventmin</span> <span class="o">=</span> <span class="n">c</span> <span class="o">-</span> <span class="n">w</span><span class="o">/</span><span class="mi">2</span>
+
+<span class="n">fig_1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">])</span>
+<span class="n">img1</span> <span class="o">=</span> <span class="n">fig_1</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">img1</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">imagen</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="n">ventmin</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">ventmax</span><span class="p">)</span>
+<span class="n">img1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;CORTE AXIAL CT&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">22</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">fig_1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">])</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">img1</span> <span class="o">=</span> <span class="n">fig_1</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="n">img1</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">imagen</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="n">ventmin</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">ventmax</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="n">img1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;CORTE AXIAL CT&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="ne">NameError</span>: name &#39;imagen&#39; is not defined
+</pre></div>
+</div>
+<img alt="../_images/ee8fe92f8a3f753ea9a8d26fbb5bd658d0d4689671e46a220f2db1f14b1937e1.png" src="../_images/ee8fe92f8a3f753ea9a8d26fbb5bd658d0d4689671e46a220f2db1f14b1937e1.png" />
+</div>
+</div>
+</section>
+<section id="manipulando-la-imagen">
+<h3>Manipulando la imagen<a class="headerlink" href="#manipulando-la-imagen" title="Link to this heading">#</a></h3>
+<p>Finalmente, podemos manipular la imagen a voluntad, dado que es un array de <code class="docutils literal notranslate"><span class="pre">numpy</span></code>. Por ejemplo, podemos reemplazar los puntos de la matriz por otros valores</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imagen2</span> <span class="o">=</span> <span class="n">imagen</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">imagen2</span><span class="p">[</span><span class="mi">150</span><span class="p">:</span><span class="mi">160</span><span class="p">,:]</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">imagen2</span><span class="p">[</span><span class="mi">370</span><span class="p">:</span><span class="mi">380</span><span class="p">,:]</span> <span class="o">=</span> <span class="mi">1000</span>
+
+
+<span class="n">fig_1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">15</span><span class="p">,</span><span class="mi">15</span><span class="p">])</span>
+<span class="n">img1</span> <span class="o">=</span> <span class="n">fig_1</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">img1</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">imagen2</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="n">ventmin</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">ventmax</span><span class="p">)</span>
+<span class="n">img1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;CORTE AXIAL CT&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">23</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">imagen2</span> <span class="o">=</span> <span class="n">imagen</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">imagen2</span><span class="p">[</span><span class="mi">150</span><span class="p">:</span><span class="mi">160</span><span class="p">,:]</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">imagen2</span><span class="p">[</span><span class="mi">370</span><span class="p">:</span><span class="mi">380</span><span class="p">,:]</span> <span class="o">=</span> <span class="mi">1000</span>
+
+<span class="ne">NameError</span>: name &#39;imagen&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>O reemplazar ciertos puntos de acuerdo a una condición particular:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imagen2</span> <span class="o">=</span> <span class="n">imagen</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">imagen2</span><span class="p">[</span><span class="n">imagen2</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">800</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1000</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">24</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">imagen2</span> <span class="o">=</span> <span class="n">imagen</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">imagen2</span><span class="p">[</span><span class="n">imagen2</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">800</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1000</span>
+
+<span class="ne">NameError</span>: name &#39;imagen&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig_1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">15</span><span class="p">,</span><span class="mi">15</span><span class="p">])</span>
+<span class="n">img1</span> <span class="o">=</span> <span class="n">fig_1</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">img1</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">imagen2</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="n">ventmin</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">ventmax</span><span class="p">)</span>
+<span class="n">img1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;CORTE AXIAL CT&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">25</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">fig_1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">15</span><span class="p">,</span><span class="mi">15</span><span class="p">])</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">img1</span> <span class="o">=</span> <span class="n">fig_1</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">img1</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">imagen2</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="n">ventmin</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">ventmax</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">img1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;CORTE AXIAL CT&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="ne">NameError</span>: name &#39;imagen2&#39; is not defined
+</pre></div>
+</div>
+<img alt="../_images/4ffdcd834f65f39525214b64a95acc8a564b9c9128dc6ca437548265b769e946.png" src="../_images/4ffdcd834f65f39525214b64a95acc8a564b9c9128dc6ca437548265b769e946.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imagen2</span> <span class="o">=</span> <span class="n">imagen</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">imagen2</span><span class="p">[(</span><span class="n">imagen2</span><span class="o">&lt;-</span><span class="mi">800</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">imagen2</span><span class="o">&gt;-</span><span class="mi">1100</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">1000</span>
+
+<span class="n">fig5</span><span class="p">,</span> <span class="n">g</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">16</span><span class="p">,</span><span class="mi">10</span><span class="p">])</span>
+<span class="n">g</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">imagen2</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="n">ventmin</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">ventmax</span><span class="p">)</span>
+<span class="n">g</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;IMAGEN 2&#39;</span><span class="p">)</span>
+
+<span class="n">g</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;HISTOGRAMA de IMAGEN 2&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">imagen2</span><span class="o">.</span><span class="n">ravel</span><span class="p">(),</span> <span class="n">bins</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span> <span class="c1">#ravel devuelve un vector 1D con todos los elementosde la matrix.</span>
+<span class="n">g</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;HOUNSFIELD UNITS&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">()</span>
+<span class="n">g</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4000</span><span class="p">])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;El FOV del CT del PET es de: &#39;</span><span class="p">,</span> <span class="n">imagen2</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">DCM</span><span class="o">.</span><span class="n">PixelSpacing</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;mm&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">26</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">imagen2</span> <span class="o">=</span> <span class="n">imagen</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">imagen2</span><span class="p">[(</span><span class="n">imagen2</span><span class="o">&lt;-</span><span class="mi">800</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">imagen2</span><span class="o">&gt;-</span><span class="mi">1100</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">fig5</span><span class="p">,</span> <span class="n">g</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">16</span><span class="p">,</span><span class="mi">10</span><span class="p">])</span>
+
+<span class="ne">NameError</span>: name &#39;imagen&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<section id="ventanas-de-visualizacion-tipicas-en-ct">
+<h4>Ventanas de visualización típicas en CT<a class="headerlink" href="#ventanas-de-visualizacion-tipicas-en-ct" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Cabeza y cuello</p>
+<ul>
+<li><p>cerebro w:80 c:40</p></li>
+<li><p>subdural w:130-300 c:50-100</p></li>
+<li><p>acv w:8 c:32 / w:40 c:40</p></li>
+<li><p>hueso w:2800 c:600</p></li>
+<li><p>Tejido blando: w:350–400 c:20–60</p></li>
+</ul>
+</li>
+<li><p>Pecho</p>
+<ul>
+<li><p>Pulmones w:1500 c:-600</p></li>
+<li><p>Mediastino w:350 c:50</p></li>
+</ul>
+</li>
+<li><p>Abdomen</p>
+<ul>
+<li><p>Tejido blando w:400 c:50</p></li>
+<li><p>Hígado w:150 c:30</p></li>
+</ul>
+</li>
+<li><p>Columna</p>
+<ul>
+<li><p>Tejido blando w:250 c:50</p></li>
+<li><p>Hueso w:1800 c:400</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./clases"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Maestría en Física Médica - Taller de Informática</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#imagenes-medicas-dicom">Imágenes médicas - DICOM</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-standard-dicom">El standard DICOM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalando-pydicom">Instalando <code class="docutils literal notranslate"><span class="pre">pydicom</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usando-pydicom">Usando <code class="docutils literal notranslate"><span class="pre">pydicom</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#abrir-un-archivo-dicom">Abrir un archivo DICOM</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#para-acceder-a-campos-privados-debo-hacerlo-por-el-tag"><em>Para acceder a CAMPOS PRIVADOS debo hacerlo por el TAG</em></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#las-imagenes-dicom">Las imágenes DICOM</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ajustando-la-imagen">Ajustando la imagen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#obteniendo-hus">Obteniendo HUs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#window-and-level">Window and Level</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manipulando-la-imagen">Manipulando la imagen</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ventanas-de-visualizacion-tipicas-en-ct">Ventanas de visualización típicas en CT</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Flavio Colavecchia
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

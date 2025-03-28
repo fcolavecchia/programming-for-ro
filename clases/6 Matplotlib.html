@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Líneas, símbolos y colores &#8212; Taller de Informática</title>
+    <title>Gráficos &#8212; Taller de Informática</title>
   
   
   
@@ -178,26 +178,15 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1%20El%20lenguaje%20Python.html">Maestría en Física Médica - Taller de Informática</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="2%20Funciones.html">Maestría en Física Médica - Taller de Informática</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="3%20M%C3%A1s%20sobre%20funciones.html">Maestría en Física Médica - Taller de Informática</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="1%20El%20lenguaje%20Python.html">Introducción a Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2%20Funciones.html">Funciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3%20M%C3%A1s%20sobre%20funciones.html">Más sobre Funciones</a></li>
 <li class="toctree-l1"><a class="reference internal" href="4%20M%C3%B3dulos.html">Maestría en Física Médica - Taller de Informática</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="5%20Numpy.html">Maestría en Física Médica - Taller de Informática</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="5%20Numpy.html">NumPy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="5%20Numpy%20-%20avanzado.html">Maestría en Física Médica - Taller de Informática</a></li>
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Líneas, símbolos y colores</a></li>
-
-
-
-
-
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Gráficos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="6%20Plotly.html">Líneas, símbolos y colores</a></li>
 
 
@@ -210,15 +199,11 @@
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="8%20Interpolacion.html">Maestría en Física Médica - Taller de Informática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8%20Interpolacion.html">Interpolación - Scipy</a></li>
 
-
-<li class="toctree-l1"><a class="reference internal" href="9%20Dicom.html">Maestría en Física Médica - Taller de Informática</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="A%20Dicom%203D.html">Maestría en Física Médica - Taller de Informática</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="B%20Integrales.html">Maestría en Física Médica - Taller de Informática</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="9%20Dicom.html">Imágenes médicas - DICOM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="A%20Dicom%203D.html">Imágenes médicas - DICOM 3D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="B%20Integrales.html">Integración numérica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Borges%20y%20matplotlib%20resuelto.html">Maestría en Física Médica - Taller de Informática</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="Borges%20y%20matplotlib.html">Maestría en Física Médica - Taller de Informática</a></li>
@@ -416,7 +401,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Líneas, símbolos y colores</h1>
+    <h1>Gráficos</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -426,16 +411,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Líneas, símbolos y colores</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nombres-de-ejes-y-leyendas">Nombres de ejes y leyendas</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dos-graficos-en-la-misma-figura">Dos gráficos en la misma figura</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exportar-las-figuras">Exportar las figuras</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-con-coordenadas-polares">GRAFICOS CON COORDENADAS POLARES</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-graficos-2d">OTROS GRAFICOS 2D</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#histogramas">HISTOGRAMAS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#leyendo-una-imagen">Leyendo una imagen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lineas-simbolos-y-colores">Líneas, símbolos y colores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nombres-de-ejes-y-leyendas">Nombres de ejes y leyendas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dos-graficos-en-la-misma-figura">Dos gráficos en la misma figura</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exportar-las-figuras">Exportar las figuras</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-con-coordenadas-polares">GRAFICOS CON COORDENADAS POLARES</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-graficos-2d">OTROS GRAFICOS 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#histogramas">HISTOGRAMAS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leyendo-una-imagen">Leyendo una imagen</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -446,7 +430,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>Además de su uso en Python, se pueden usar <em>comandos del notebook</em> para modificar el comportamiento de los gráficos en Jupyter. Por ejemplo:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="graficos">
+<h1>Gráficos<a class="headerlink" href="#graficos" title="Link to this heading">#</a></h1>
+<p>Además de su uso en Python, se pueden usar <em>comandos del notebook</em> para modificar el comportamiento de los gráficos en Jupyter. Por ejemplo:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">inline</span></code>: por defecto devuelve gráficos no interactivos.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">notebook</span></code>: gráficos interactivos</p></li>
@@ -812,7 +798,7 @@ plot(*args: &#39;float | ArrayLike | str&#39;, scalex: &#39;bool&#39; = True, sc
 </div>
 </div>
 <section id="lineas-simbolos-y-colores">
-<h1>Líneas, símbolos y colores<a class="headerlink" href="#lineas-simbolos-y-colores" title="Link to this heading">#</a></h1>
+<h2>Líneas, símbolos y colores<a class="headerlink" href="#lineas-simbolos-y-colores" title="Link to this heading">#</a></h2>
 <p>La forma más simple de elegir el modo de graficación de la curva es a través de un tercer argumento.
 Este argumento, que aparece inmediatamente después de los datos (x e y), permite controlar el tipo de línea o símbolo utilizado en la graficación. En el caso de la línea sólida se puede especificar con un guión (‘-’) o simplemente no poner nada, ya que línea sólida es el símbolo por defecto. Las dos especificaciones anteriores son equivalentes. También se puede elegir el color, o el símbolo a utilizar con este argumento:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s1">&#39;g-&#39;</span><span class="p">)</span>
@@ -1819,7 +1805,7 @@ if (IPython.notebook.kernel !== null) {
         mpl.mpl_figure_comm
     );
 }
-</script><div class="output text_html"><div id='6af68933-457b-4929-8c83-a52effed47d5'></div></div></div>
+</script><div class="output text_html"><div id='22c4c9aa-6675-4f1e-b6a5-5d8ad04e01e9'></div></div></div>
 </div>
 <p>Los siguientes caracteres pueden utilizarse para controlar el símbolo de graficación:</p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -1999,12 +1985,12 @@ if (IPython.notebook.kernel !== null) {
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/5887e99e4b680a67abfdce90570ec0fe2887353f0f746c1b37f003ea51ffd451.png" src="../_images/5887e99e4b680a67abfdce90570ec0fe2887353f0f746c1b37f003ea51ffd451.png" />
+<img alt="../_images/b137cec02475c9806967442970f9cfa292a05c33c0839dce2c0fad6138d78fa0.png" src="../_images/b137cec02475c9806967442970f9cfa292a05c33c0839dce2c0fad6138d78fa0.png" />
 </div>
 </div>
 </section>
 <section id="nombres-de-ejes-y-leyendas">
-<h1>Nombres de ejes y leyendas<a class="headerlink" href="#nombres-de-ejes-y-leyendas" title="Link to this heading">#</a></h1>
+<h2>Nombres de ejes y leyendas<a class="headerlink" href="#nombres-de-ejes-y-leyendas" title="Link to this heading">#</a></h2>
 <p>Vamos ahora a agregar nombres a los ejes y a las curvas.</p>
 <p>Para agregar nombres a las curvas, tenemos que agregar un <code class="docutils literal notranslate"><span class="pre">label</span></code>, en este caso en el mismo comando <code class="docutils literal notranslate"><span class="pre">plot()</span></code>, y luego
 mostrarlo con `legend()</p>
@@ -2018,7 +2004,7 @@ mostrarlo con `legend()</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/b26540e2dda288e5bb9ee42aaa66928c3fdc76f9ac63aad4a51915b689fb7151.png" src="../_images/b26540e2dda288e5bb9ee42aaa66928c3fdc76f9ac63aad4a51915b689fb7151.png" />
+<img alt="../_images/9836c8fd38f04053c616334933fceb78f928e24052e6b9f95694097a1f67a974.png" src="../_images/9836c8fd38f04053c616334933fceb78f928e24052e6b9f95694097a1f67a974.png" />
 </div>
 </div>
 <p>Para agregar nombres a los ejes usamos <code class="docutils literal notranslate"><span class="pre">xlabel</span></code> y <code class="docutils literal notranslate"><span class="pre">ylabel</span></code>:
@@ -2036,7 +2022,7 @@ Los títulos a la figura se pueden agregar con <code class="docutils literal not
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/222d5136ad205dfd4f222864b90326753a33356935f4763287b28723421fdf84.png" src="../_images/222d5136ad205dfd4f222864b90326753a33356935f4763287b28723421fdf84.png" />
+<img alt="../_images/6d6a318797be4d3d2924e9faa736a36673daa5c1d82ae4abe3e9169a0244fc24.png" src="../_images/6d6a318797be4d3d2924e9faa736a36673daa5c1d82ae4abe3e9169a0244fc24.png" />
 </div>
 </div>
 <p>Podemos tambien graficar lineas verticales y horizontales usando <code class="docutils literal notranslate"><span class="pre">axvline</span></code> y <code class="docutils literal notranslate"><span class="pre">axhline</span></code></p>
@@ -2055,7 +2041,7 @@ Los títulos a la figura se pueden agregar con <code class="docutils literal not
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/a752a51ab4da7eedaebf44f2bc6f4afe23dff520c40bbae110700d6ac15f6790.png" src="../_images/a752a51ab4da7eedaebf44f2bc6f4afe23dff520c40bbae110700d6ac15f6790.png" />
+<img alt="../_images/644cbab0b7f26cf6096598ff5ec26363f7f252104230abd258bf2bf39bec8d69.png" src="../_images/644cbab0b7f26cf6096598ff5ec26363f7f252104230abd258bf2bf39bec8d69.png" />
 </div>
 </div>
 <p>Para pasar a escala logarítmica usamos <code class="docutils literal notranslate"><span class="pre">xscale</span></code> o <code class="docutils literal notranslate"><span class="pre">yscale</span></code></p>
@@ -2075,12 +2061,12 @@ Los títulos a la figura se pueden agregar con <code class="docutils literal not
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/609c30f465b07cbc3762c8431d028aafb34f3f0f3772c9b026b504b134388198.png" src="../_images/609c30f465b07cbc3762c8431d028aafb34f3f0f3772c9b026b504b134388198.png" />
+<img alt="../_images/1173be6a2904ae55d7f7aee15db2030385517fc9e5d798b973ef4df7c3c30418.png" src="../_images/1173be6a2904ae55d7f7aee15db2030385517fc9e5d798b973ef4df7c3c30418.png" />
 </div>
 </div>
 </section>
 <section id="dos-graficos-en-la-misma-figura">
-<h1>Dos gráficos en la misma figura<a class="headerlink" href="#dos-graficos-en-la-misma-figura" title="Link to this heading">#</a></h1>
+<h2>Dos gráficos en la misma figura<a class="headerlink" href="#dos-graficos-en-la-misma-figura" title="Link to this heading">#</a></h2>
 <p>Hay varias funciones que permiten poner más de un gráfico en la misma figura. Veamos un ejemplo utilizando <code class="docutils literal notranslate"><span class="pre">figure</span></code> y <code class="docutils literal notranslate"><span class="pre">add_subplot</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2111,7 +2097,7 @@ Los títulos a la figura se pueden agregar con <code class="docutils literal not
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/0abfd47d7a1c73bcf15f864d218843ab8cc76516f47dc007306bb1f357e8c9b1.png" src="../_images/0abfd47d7a1c73bcf15f864d218843ab8cc76516f47dc007306bb1f357e8c9b1.png" />
+<img alt="../_images/b337b943a41af39594b2023b6dc4263417323b6d2b0a56c3092d68c90830032a.png" src="../_images/b337b943a41af39594b2023b6dc4263417323b6d2b0a56c3092d68c90830032a.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2128,7 +2114,7 @@ Los títulos a la figura se pueden agregar con <code class="docutils literal not
 </div>
 </section>
 <section id="exportar-las-figuras">
-<h1>Exportar las figuras<a class="headerlink" href="#exportar-las-figuras" title="Link to this heading">#</a></h1>
+<h2>Exportar las figuras<a class="headerlink" href="#exportar-las-figuras" title="Link to this heading">#</a></h2>
 <p>Para guardar las figuras en alguno de los formatos disponibles utilizamos la función <code class="docutils literal notranslate"><span class="pre">savefig()</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2158,12 +2144,12 @@ Los títulos a la figura se pueden agregar con <code class="docutils literal not
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/1d3be3c73abfa1c9e0ed88f3cddc0aef8b89d88881e8fad6e9f5fd4dbb52efde.png" src="../_images/1d3be3c73abfa1c9e0ed88f3cddc0aef8b89d88881e8fad6e9f5fd4dbb52efde.png" />
+<img alt="../_images/94ec3368151fb9ba227c30a094a445dc7bfa86183803bb4cfd82950efddea031.png" src="../_images/94ec3368151fb9ba227c30a094a445dc7bfa86183803bb4cfd82950efddea031.png" />
 </div>
 </div>
 </section>
 <section id="graficos-con-coordenadas-polares">
-<h1>GRAFICOS CON COORDENADAS POLARES<a class="headerlink" href="#graficos-con-coordenadas-polares" title="Link to this heading">#</a></h1>
+<h2>GRAFICOS CON COORDENADAS POLARES<a class="headerlink" href="#graficos-con-coordenadas-polares" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
@@ -2183,7 +2169,7 @@ Los títulos a la figura se pueden agregar con <code class="docutils literal not
 </div>
 </section>
 <section id="otros-graficos-2d">
-<h1>OTROS GRAFICOS 2D<a class="headerlink" href="#otros-graficos-2d" title="Link to this heading">#</a></h1>
+<h2>OTROS GRAFICOS 2D<a class="headerlink" href="#otros-graficos-2d" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
@@ -2204,15 +2190,15 @@ Los títulos a la figura se pueden agregar con <code class="docutils literal not
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.FillBetweenPolyCollection at 0x10b031760&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.FillBetweenPolyCollection at 0x11b458a40&gt;
 </pre></div>
 </div>
-<img alt="../_images/8f65b11a2d0bd20619cd5937ff6b24b995981ef26ff153290cd7e88ad847633d.png" src="../_images/8f65b11a2d0bd20619cd5937ff6b24b995981ef26ff153290cd7e88ad847633d.png" />
+<img alt="../_images/493c666c4ee795751994015d6f146c240e803e3f5db1bab40382cc281f5bc936.png" src="../_images/493c666c4ee795751994015d6f146c240e803e3f5db1bab40382cc281f5bc936.png" />
 </div>
 </div>
 </section>
 <section id="histogramas">
-<h1>HISTOGRAMAS<a class="headerlink" href="#histogramas" title="Link to this heading">#</a></h1>
+<h2>HISTOGRAMAS<a class="headerlink" href="#histogramas" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span> <span class="c1">#randn devuelve una distribucion normal</span>
@@ -2227,7 +2213,7 @@ Los títulos a la figura se pueden agregar con <code class="docutils literal not
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/1ec45bc8534942fcaf1c6816cf83c4e3e7212318493a35a55815e237c4b7856e.png" src="../_images/1ec45bc8534942fcaf1c6816cf83c4e3e7212318493a35a55815e237c4b7856e.png" />
+<img alt="../_images/b9772934c942bd8751b5a043db8842e848f8e36dcf568fee6a1252421f9678be.png" src="../_images/b9772934c942bd8751b5a043db8842e848f8e36dcf568fee6a1252421f9678be.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2239,7 +2225,7 @@ Los títulos a la figura se pueden agregar con <code class="docutils literal not
 </div>
 </section>
 <section id="leyendo-una-imagen">
-<h1>Leyendo una imagen<a class="headerlink" href="#leyendo-una-imagen" title="Link to this heading">#</a></h1>
+<h2>Leyendo una imagen<a class="headerlink" href="#leyendo-una-imagen" title="Link to this heading">#</a></h2>
 <p>Además de realizar gráficos 2D, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> permite trabajar con imágenes. Se pueden leer imágenes que son interpretadas como un array de <code class="docutils literal notranslate"><span class="pre">numpy</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2591,6 +2577,7 @@ Los títulos a la figura se pueden agregar con <code class="docutils literal not
 </div>
 </div>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -2656,16 +2643,15 @@ Los títulos a la figura se pueden agregar con <code class="docutils literal not
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Líneas, símbolos y colores</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nombres-de-ejes-y-leyendas">Nombres de ejes y leyendas</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dos-graficos-en-la-misma-figura">Dos gráficos en la misma figura</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exportar-las-figuras">Exportar las figuras</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-con-coordenadas-polares">GRAFICOS CON COORDENADAS POLARES</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-graficos-2d">OTROS GRAFICOS 2D</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#histogramas">HISTOGRAMAS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#leyendo-una-imagen">Leyendo una imagen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lineas-simbolos-y-colores">Líneas, símbolos y colores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nombres-de-ejes-y-leyendas">Nombres de ejes y leyendas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dos-graficos-en-la-misma-figura">Dos gráficos en la misma figura</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exportar-las-figuras">Exportar las figuras</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-con-coordenadas-polares">GRAFICOS CON COORDENADAS POLARES</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-graficos-2d">OTROS GRAFICOS 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#histogramas">HISTOGRAMAS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leyendo-una-imagen">Leyendo una imagen</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>

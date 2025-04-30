@@ -4,18 +4,15 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
-- file: "clases/clases/0 Introducción a Jupyter Notebooks"
+- file: "clases/0 Introducción a Jupyter Notebooks"
 - file: "clases/1 El lenguaje Python"
 - file: "clases/2 Funciones"
 - file: "clases/3 Más sobre funciones"
 - file: "clases/4 Módulos"
 - file: "clases/5 Numpy"
 - file: "clases/5 Numpy - avanzado"
-- file: "clases/6 Matplotlib"
-- file: "clases/6 Plotly"
+- file: "clases/6 Matplotlib"  
+# - file: "clases/6 Plotly"
 - file: "clases/7 Intermedio"
 - file: "clases/8 Interpolacion"
 - file: "clases/9 Dicom"
@@ -23,9 +20,9 @@ chapters:
 - file: "clases/A Dicom 3D"
 - file: "clases/B Integrales"
 - file: "clases/Borges y matplotlib resuelto"
-- file: "clases/Borges y matplotlib"
+# - file: "clases/Borges y matplotlib"
 - file: "clases/Jugando con strings solucion"
-- file: "clases/Jugando con strings"
+# - file: "clases/Jugando con strings"
 - file: "clases/Pangram solucion"
 - file: "clases/Pangrama Versiones"
 - file: "clases/Pangrama"

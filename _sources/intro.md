@@ -8,5 +8,7 @@ The programming language used in the course is Python, that has an ubiquitous kn
 
 Most of the course is written in [Jupyter notebooks](https://jupyter.org/), a tool that intertwines code and text and graphics for easy learning.
 
+> The course is under construction, debuts first semester 2026
+
 ```{tableofcontents}
 ```

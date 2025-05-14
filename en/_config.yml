@@ -1,7 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Taller de Informática
+title: Programming for Radiation Oncology
+subtitle: A practical guide to programming in Python for radiation oncology
 author: Flavio Colavecchia
 logo: logo.png
 
@@ -22,7 +23,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/fcolavecchia/taller-de-informatica  # Online location of your book
+  url: https://github.com/fcolavecchia/programming-for-ro  # Online location of your book
   # Online location of your book
   path_to_book: en  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)

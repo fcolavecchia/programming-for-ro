@@ -1,11 +1,12 @@
-# Welcome to your Jupyter Book
+# Welcome to Programming for Radiation Oncology
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+This is a course on programming and Artificial Intelligence for Radiation Oncology. It is targeted to all personnel involved in Radiation Oncology with interest in using programming tools to learn from their data, streamline processes and get the best results from recent AI technologies.
 
-Check out the content pages bundled with this sample book to see more.
+> No prior knowledge of programming is assumed
+
+The programming language used in the course is Python, that has an ubiquitous knowledge base and libraries to do almost anything. 
+
+Most of the course is written in [Jupyter notebooks](https://jupyter.org/), a tool that intertwines code and text and graphics for easy learning.
 
 ```{tableofcontents}
 ```
